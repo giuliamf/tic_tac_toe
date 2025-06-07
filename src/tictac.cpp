@@ -1,6 +1,6 @@
-int vencedor = 0;
-
 int verificaVencedor(int tabuleiro[3][3]) {
+
+    int vencedor = 0;
     // Verifica vitória em linhas
     for (int i = 0; i < 3; ++i) {
         if (tabuleiro[i][0] != 0 &&
