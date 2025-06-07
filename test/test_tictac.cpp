@@ -30,12 +30,13 @@ TEST(TicTacToeTest, XVenceNaLinha) {
 
 TEST(TicTacToeTest, OVenceNaColuna) {
     int tabuleiro[3][3] = {
-        {1, 2, 0},
-        {1, 2, 0},
-        {0, 2, 0}
+        {2, 1, 0},
+        {2, 1, 0},
+        {2, 0, 1}
     };
     EXPECT_EQ(verificaVencedor(tabuleiro), 2);
 }
+
 
 TEST(TicTacToeTest, XVenceDiagonalPrincipal) {
     int tabuleiro[3][3] = {
