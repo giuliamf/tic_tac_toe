@@ -13,12 +13,11 @@ TEST(TicTacToeTest, ApenasUmXIndefinido) {
 TEST(TicTacToeTest, JogoEmpatado) {
     int tabuleiro[3][3] = {
         {1, 2, 1},
-        {2, 1, 2},
+        {1, 2, 2},
         {2, 1, 1}
     };
     EXPECT_EQ(verificaVencedor(tabuleiro), 0);
 }
-
 
 TEST(TicTacToeTest, XVenceNaLinha) {
     int tabuleiro[3][3] = {
