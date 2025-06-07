@@ -75,7 +75,7 @@ int verificaVencedor(int tabuleiro[3][3]) {
                 temEspacoVazio = true;
 
     if (!temEspacoVazio)
-        return 0; // empate
+        return 0;  // empate
 
-    return -1; // indefinido
+    return -1;  // indefinido
 }
