@@ -64,4 +64,12 @@ TEST(TicTacToeTest, JogoImpossivelComDoisVencedores) {
     EXPECT_EQ(verificaVencedor(tabuleiro), -2);
 }
 
+TEST(TicTacToeTest, JogoImpossivelMaisXDoQueO) {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {1, 1, 2},
+        {2, 2, 0}
+    };
+    EXPECT_EQ(verificaVencedor(tabuleiro), -2);
+}
 
