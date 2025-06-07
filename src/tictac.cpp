@@ -1,4 +1,5 @@
 // Copyright 2025 Giulia Moura
+#include "tictac.hpp"
 
 int verificaVencedor(int tabuleiro[3][3]) {
     int vencedor = 0;
