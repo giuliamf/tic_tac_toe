@@ -8,6 +8,16 @@ int verificaVencedor(int tabuleiro[3][3]) {
             }
     }
 
+    // Verifica vitória em colunas
+    for (int j = 0; j < 3; ++j) {
+        if (tabuleiro[0][j] != 0 &&
+            tabuleiro[0][j] == tabuleiro[1][j] &&
+            tabuleiro[1][j] == tabuleiro[2][j]) {
+            return tabuleiro[0][j];
+            }
+    }
+
+
     // Verifica se o tabuleiro está cheio
     bool temEspacoVazio = false;
     for (int i = 0; i < 3 && !temEspacoVazio; ++i)
