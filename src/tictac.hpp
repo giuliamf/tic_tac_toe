@@ -1,3 +1,5 @@
+// Copyright 2025 Giulia Moura
+
 #ifndef TICTAC_HPP
 #define TICTAC_HPP
 

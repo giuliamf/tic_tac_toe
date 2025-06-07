@@ -1,3 +1,5 @@
+// Copyright 2025 Giulia Moura
+
 #include "gtest/gtest.h"
 #include "../src/tictac.hpp"
 

@@ -1,3 +1,5 @@
+// Copyright 2025 Giulia Moura
+
 int verificaVencedor(int tabuleiro[3][3]) {
     int vencedor = 0;
     int contX = 0, contO = 0;
