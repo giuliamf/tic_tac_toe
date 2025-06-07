@@ -98,6 +98,7 @@ build CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj: CXX_COMPILER__test_ti
 
 build test_tictac.exe: CXX_EXECUTABLE_LINKER__test_tictac_ CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj | libtictac.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libtictac.a
   FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
+  LINK_FLAGS = -fprofile-arcs -ftest-coverage
   LINK_LIBRARIES = libtictac.a  lib/libgtest.a  lib/libgtest_main.a  -lpthread  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_tictac.dir
   POST_BUILD = cd .
