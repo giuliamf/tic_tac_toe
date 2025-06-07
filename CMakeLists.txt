@@ -2,7 +2,10 @@ cmake_minimum_required(VERSION 3.10)
 project(tictactoe)
 
 set(CMAKE_CXX_STANDARD 17)
+
+# Flags de cobertura
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage -O0 -g")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fprofile-arcs -ftest-coverage")
 
 # Adiciona GoogleTest (como subdiretório)
 add_subdirectory(googletest)

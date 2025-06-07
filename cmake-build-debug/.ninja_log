@@ -1,0 +1,13 @@
+# ninja log v6
+14	115	7710301792302373	CMakeFiles/tictac.dir/src/tictac.cpp.obj	96d242f4bda5d1b1
+116	224	7710301793378975	libtictac.a	211c819e326f1712
+38	979	7710301792583647	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	207f0850f2ecc40b
+64	1235	7710301792786830	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	10c743e44c43bcf5
+49	1237	7710301792705362	CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj	e789decb13e963c
+22	2706	7710301792413337	googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	58be2aa40f632c69
+6	8442	7710301792184545	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	1f5d5989a73ad484
+8457	8646	7710301876788265	lib/libgtest.a	a55f8e325530b887
+8657	8760	7710301878787719	lib/libgtest_main.a	769c772f22ae1442
+8647	8774	7710301878642646	lib/libgmock.a	484977e2dc47de11
+8774	8878	7710301879920746	lib/libgmock_main.a	e4f3ddaa894be069
+8760	9294	7710301879810153	test_tictac.exe	3cf623123e7c7d0a
