@@ -1,6 +1,19 @@
 int verificaVencedor(int tabuleiro[3][3]) {
 
     int vencedor = 0;
+    int contX = 0, contO = 0;
+
+    // Conta X e O
+    for (int i = 0; i < 3; ++i)
+        for (int j = 0; j < 3; ++j) {
+            if (tabuleiro[i][j] == 1) contX++;
+            else if (tabuleiro[i][j] == 2) contO++;
+        }
+
+    // Valida número de jogadas
+    if (contX < contO || contX - contO > 1)
+        return -2;
+
     // Verifica vitória em linhas
     for (int i = 0; i < 3; ++i) {
         if (tabuleiro[i][0] != 0 &&
