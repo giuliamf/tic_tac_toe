@@ -18,3 +18,12 @@ TEST(TicTacToeTest, JogoEmpatado) {
     };
     EXPECT_EQ(verificaVencedor(tabuleiro), 0);
 }
+
+TEST(TicTacToeTest, XVenceNaLinha) {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {2, 2, 0},
+        {0, 0, 0}
+    };
+    EXPECT_EQ(verificaVencedor(tabuleiro), 1);
+}
