@@ -45,3 +45,12 @@ TEST(TicTacToeTest, XVenceDiagonalPrincipal) {
     };
     EXPECT_EQ(verificaVencedor(tabuleiro), 1);
 }
+
+TEST(TicTacToeTest, OVenceDiagonalSecundaria) {
+    int tabuleiro[3][3] = {
+        {1, 1, 2},
+        {0, 2, 0},
+        {2, 0, 1}
+    };
+    EXPECT_EQ(verificaVencedor(tabuleiro), 2);
+}
