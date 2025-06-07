@@ -4,7 +4,7 @@ project(tictactoe)
 set(CMAKE_CXX_STANDARD 17)
 
 # Flags de cobertura
-set(COVERAGE_FLAGS "-fprofile-arcs -ftest-coverage -O0 -g")
+set(COVERAGE_FLAGS -fprofile-arcs -ftest-coverage -O0 -g)
 
 # Adiciona GoogleTest
 add_subdirectory(googletest)

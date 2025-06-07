@@ -46,7 +46,7 @@ build cmake_object_order_depends_target_tictac: phony || .
 
 build CMakeFiles/tictac.dir/src/tictac.cpp.obj: CXX_COMPILER__tictac_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/src/tictac.cpp || cmake_object_order_depends_target_tictac
   DEP_FILE = CMakeFiles\tictac.dir\src\tictac.cpp.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=gnu++17
+  FLAGS = -std=gnu++17 "-fprofile-arcs -ftest-coverage -O0 -g"
   INCLUDES = -IC:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include
   OBJECT_DIR = CMakeFiles\tictac.dir
   OBJECT_FILE_DIR = CMakeFiles\tictac.dir\src
@@ -62,7 +62,6 @@ build CMakeFiles/tictac.dir/src/tictac.cpp.obj: CXX_COMPILER__tictac_unscanned_ 
 # Link the static library libtictac.a
 
 build libtictac.a: CXX_STATIC_LIBRARY_LINKER__tictac_ CMakeFiles/tictac.dir/src/tictac.cpp.obj
-  LANGUAGE_COMPILE_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
   OBJECT_DIR = CMakeFiles\tictac.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -81,7 +80,7 @@ build cmake_object_order_depends_target_test_tictac: phony || cmake_object_order
 
 build CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj: CXX_COMPILER__test_tictac_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/test/test_tictac.cpp || cmake_object_order_depends_target_test_tictac
   DEP_FILE = CMakeFiles\test_tictac.dir\test\test_tictac.cpp.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=gnu++17
+  FLAGS = -std=gnu++17 "-fprofile-arcs -ftest-coverage -O0 -g"
   INCLUDES = -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest
   OBJECT_DIR = CMakeFiles\test_tictac.dir
   OBJECT_FILE_DIR = CMakeFiles\test_tictac.dir\test
@@ -97,9 +96,7 @@ build CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj: CXX_COMPILER__test_ti
 # Link the executable test_tictac.exe
 
 build test_tictac.exe: CXX_EXECUTABLE_LINKER__test_tictac_ CMakeFiles/test_tictac.dir/test/test_tictac.cpp.obj | libtictac.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libtictac.a
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
-  LINK_FLAGS = -fprofile-arcs -ftest-coverage
-  LINK_LIBRARIES = libtictac.a  lib/libgtest.a  lib/libgtest_main.a  -lpthread  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libtictac.a  lib/libgtest.a  lib/libgtest_main.a  -lpthread  -lgcov  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\test_tictac.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -283,7 +280,7 @@ build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depen
 
 build googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
   DEP_FILE = googletest\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -IC:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock/include -IC:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock.dir\src
@@ -299,7 +296,6 @@ build googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPI
 # Link the static library lib\libgmock.a
 
 build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_ googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -318,7 +314,7 @@ build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_
 
 build googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
   DEP_FILE = googletest\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock/include -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googlemock -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir
   OBJECT_FILE_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir\src
@@ -334,7 +330,6 @@ build googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX
 # Link the static library lib\libgmock_main.a
 
 build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_ googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
   OBJECT_DIR = googletest\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -435,7 +430,7 @@ build cmake_object_order_depends_target_gtest: phony || .
 
 build googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
   DEP_FILE = googletest\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -IC:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include -IC:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest.dir
   OBJECT_FILE_DIR = googletest\googletest\CMakeFiles\gtest.dir\src
@@ -451,7 +446,6 @@ build googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPI
 # Link the static library lib\libgtest.a
 
 build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_ googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
-  LANGUAGE_COMPILE_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -470,7 +464,7 @@ build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_
 
 build googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_ C$:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
   DEP_FILE = googletest\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
-  FLAGS = -fprofile-arcs -ftest-coverage -O0 -g -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
+  FLAGS = -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
   INCLUDES = -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest/include -isystem C:/Users/giuli/Documents/TP2/tic_tac_toe/googletest/googletest
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest_main.dir
   OBJECT_FILE_DIR = googletest\googletest\CMakeFiles\gtest_main.dir\src
@@ -486,7 +480,6 @@ build googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX
 # Link the static library lib\libgtest_main.a
 
 build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_ googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -fprofile-arcs -ftest-coverage -O0 -g
   OBJECT_DIR = googletest\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

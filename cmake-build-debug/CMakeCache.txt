@@ -362,6 +362,9 @@ gtest_force_shared_crt:BOOL=OFF
 //Build gtest with internal symbols hidden in shared libraries.
 gtest_hide_internal_symbols:BOOL=OFF
 
+//Dependencies for the target
+tictac_LIB_DEPENDS:STATIC=general;gcov;
+
 //Value Computed by CMake
 tictactoe_BINARY_DIR:STATIC=C:/Users/giuli/Documents/TP2/tic_tac_toe/cmake-build-debug
 
