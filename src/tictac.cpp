@@ -17,6 +17,13 @@ int verificaVencedor(int tabuleiro[3][3]) {
             }
     }
 
+    // Verifica vitória na diagonal principal
+    if (tabuleiro[0][0] != 0 &&
+        tabuleiro[0][0] == tabuleiro[1][1] &&
+        tabuleiro[1][1] == tabuleiro[2][2]) {
+        return tabuleiro[0][0];
+        }
+
 
     // Verifica se o tabuleiro está cheio
     bool temEspacoVazio = false;
