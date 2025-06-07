@@ -27,3 +27,12 @@ TEST(TicTacToeTest, XVenceNaLinha) {
     };
     EXPECT_EQ(verificaVencedor(tabuleiro), 1);
 }
+
+TEST(TicTacToeTest, OVenceNaColuna) {
+    int tabuleiro[3][3] = {
+        {1, 2, 0},
+        {1, 2, 0},
+        {0, 2, 0}
+    };
+    EXPECT_EQ(verificaVencedor(tabuleiro), 2);
+}
