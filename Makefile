@@ -27,7 +27,7 @@ run: $(TARGET)
 coverage: run
 	cp test_tictac-tictac.gcno tictac.gcno
 	cp test_tictac-tictac.gcda tictac.gcda
-	gcov tictac.cpp
+	gcov tictac.cpp > gcov.log
 
 
 clean:
